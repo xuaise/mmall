@@ -10,6 +10,7 @@ com\mmall\dao\CartMapper.class
 com\mmall\common\Const$ProductStatusEnum.class
 com\alipay\demo\trade\Main.class
 com\mmall\dao\CategoryMapper.class
+com\mmall\util\RedisPoolUtil.class
 com\mmall\common\ServerResponse.class
 com\mmall\vo\CartProductVo.class
 com\mmall\controller\backend\ProductManageController.class
@@ -25,6 +26,8 @@ com\mmall\vo\ShippingVo.class
 com\mmall\vo\OrderItemVo.class
 com\mmall\controller\backend\UserManageController.class
 com\mmall\pojo\Product.class
+com\mmall\util\JsonUtil.class
+com\mmall\util\CookieUtil.class
 com\mmall\util\DateTimeUtil.class
 com\mmall\pojo\OrderItem.class
 com\mmall\pojo\PayInfo.class
@@ -37,6 +40,7 @@ com\mmall\common\Const$OrderStatusEnum.class
 com\mmall\common\ResponseCode.class
 com\mmall\controller\portal\UserController.class
 com\mmall\vo\ProductListVo.class
+com\mmall\common\Const$RedisCacheExTime.class
 com\mmall\service\impl\FileServiceImpl.class
 com\alipay\demo\trade\DemoHbRunner.class
 com\mmall\vo\OrderProductVo.class
@@ -51,6 +55,7 @@ com\mmall\dao\ProductMapper.class
 com\mmall\pojo\Cart.class
 com\mmall\service\IFileService.class
 com\mmall\pojo\Category.class
+com\mmall\common\RedisPool.class
 com\mmall\service\impl\CartServiceImpl.class
 com\mmall\service\impl\ShippingServiceImpl.class
 com\mmall\util\PropertiesUtil.class

@@ -9,14 +9,15 @@ import javax.servlet.http.HttpServletResponse;
 
 @Slf4j
 public class CookieUtil {
-    private static final String COOKIE_NAME = "mmall.login.token";
-    private static final String COOKIE_DOMAIN = ".aaa.com";
+    private final static String COOKIE_NAME = "mmall.login.token";
+    private final static  String COOKIE_DOMAIN = "aaa.com";
 
     public static void writeLoginToken(HttpServletResponse response,String token){
         Cookie cookie = new Cookie(COOKIE_NAME,token);
         cookie.setDomain(COOKIE_DOMAIN);
         cookie.setMaxAge(60*60*24*365);
-        cookie.setPath("/cookie");
+        cookie.setHttpOnly(true);
+        cookie.setPath("/");
         log.info("write cookieName：{},cookieValue:{}",cookie.getName(),cookie.getValue());
         response.addCookie(cookie);
     }
